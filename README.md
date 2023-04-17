@@ -110,12 +110,12 @@ Project-2 from GUVI | Data Visualization with Streamlit and Plotly library
 # Converting the dataframe into csv file
 df.to_csv('filename.csv',index=False)
 
-# Step 4:
+# Step 3:
         Database insertion:
                engine=create_engine("mysql+pymysql://root:Risvana123@localhost:3306/phonepay_project")
                df.to_sql("sql_table_name",engine)
                
-# Step 5:
+# Step 4:
           Data retrieval:
                   with engine.begin() as conn:
                         sql=text(f'select * from {table_name}')
